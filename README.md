@@ -1,68 +1,50 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# react-personal-portfolio
 
-## Available Scripts
+> ### React personal portfolio (simple react and Node JS project). Used to showcase Your profile, skills, Projects and contact. It uses Node JS  for backend to provide skills in different categories like Front-end, Back-end and databases. It is also used to provide different projects.
 
-In the project directory, you can run:
+## Getting started
 
-### `npm start`
+You can view a live demo over at https://react-redux.realworld.io/
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+To get the frontend running locally:
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+- Clone this repo `https://github.com/Terahpatrick/react-personal-portfolio.git`.
+- `npm install` to install all req'd dependencies
+- `npm start` to start the local server (this project uses create-react-app)
 
-### `npm test`
+Local web server will use port 3000. You can configure port in scripts section of `package.json`: we use [cross-env](https://github.com/kentcdodds/cross-env) to set environment variable PORT for React scripts, this is Windows-compatible way of setting environment variables.
+ 
+Alternatively, you can add `.env` file in the root folder of project to set environment variables (use PORT to change webserver's port). This file will be ignored by git, so it is suitable for API keys and other sensitive stuff. Refer to [dotenv](https://github.com/motdotla/dotenv) and [React](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-development-environment-variables-in-env) documentation for more details. Also, please remove setting variable via script section of `package.json` - `dotenv` never override variables if they are already set.  
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Making requests to the backend API
 
-### `npm run build`
+For convenience, I created a node js back which contains all routes & responses for the server.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The source code for the backend server (available for Node) can be found in the [Back-end Repo](https://github.com/Terahpatrick/node-personal-portfolio.git ).
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+If you want to change the API URL to a local server, it will run to the local server's URL (i.e. `http://localhost:2500/api`)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Functionality overview
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The example application is portfolio called "Terah". It uses a custom API for all requests.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**General functionality:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- CRU* Projects
+- CRUD Skills, 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+**The general page breakdown looks like this:**
 
-## Learn More
+- Home page (URL: / )
+    - Personal profile
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Skills page (URL: /skills )
+    - Skills eg. Back-end, Front-end
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Project page (URL: /projects )
+    - Projects 
 
-### Code Splitting
+- Contact page (URL: /contact )
+    - Form to contacting me.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

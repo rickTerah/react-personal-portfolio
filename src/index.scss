@@ -1,0 +1,31 @@
+@import './mixins.scss';
+
+:root{
+  
+  --color-primary: ;
+  --color-primary-dark: ;
+  --color-primary-light: ;
+  --color-secondary: ;
+  --color-secondary-light: ;
+  --color-secondary-dark: ;
+  --color-white: #fff;
+  --color-footer: blueviolet;
+}
+
+*,
+*::after,
+*::before
+{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit;
+
+}
+html{
+   font-size: 62.5%
+}
+
+body {
+  box-sizing: border-box;
+  width:100%;
+}

@@ -1,0 +1,96 @@
+.contact{
+    display: flex;
+    background-color: #5bc0de;
+    width: 75%;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 10rem;
+    border-radius: 1rem;
+}
+.contact-me{
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 2rem;
+    text-align: center;
+}
+
+.form {
+    &__group:not(:last-child){
+        margin-bottom: 2rem;
+    }
+    &__input {
+        font-size: 1.5rem;
+        padding: 1.5rem 2rem;
+        font-family: inherit;
+        border-radius: 2px;
+        border: none;
+        background-color: #5bc0de;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.068);
+        width: 90%;
+        display: block;
+        transition: all .3s;
+        &:focus{
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba(#000, .1);
+            border-bottom: 2px solid #eee;
+        }
+        &::focus:invalid {
+            border-bottom: 2px solid #eee;
+        }
+    }
+    &__label {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-left: 2rem;
+        margin-top: .7rem;
+        display: block;
+        transition: all .3s;
+    }
+    &__input:placeholder-shown + &__label{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+    }
+}
+.btn {
+    &,
+    &:link,
+    &:visited{
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .5s;
+        position: relative;
+        border: none;
+        cursor: pointer;
+        width: inherit;
+        position: relative;
+        left: 45%;
+        margin-top: 3rem;
+    }
+
+    &--green {
+        background-color:#5cb85c;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }    
+}
+.alert {
+    padding: .8rem 3.5rem 1.8rem 1.4rem;
+    margin-bottom: 1.8rem;
+    margin-left: 1rem;
+    width: 60%;
+    color: #eee;
+    opacity: 0.8;
+    background-color: #dc3545;
+    border: 1px solid #fbeed5;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    &-error{
+        font-size: 1.4rem;
+    }
+}

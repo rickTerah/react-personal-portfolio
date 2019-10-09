@@ -1,0 +1,92 @@
+
+/* 
+// MEDIA QUERIES MANAGER
+
+0-320px       :  mobile-small
+0 - 375px     :  mobile-medium
+376px - 425px :  mobile-large 
+425px - 600px :  tablet-small
+426 - 768px   :  tablet
+768px - 944px :  tablet-large
+944px - 1024px:  laptop-small
+1024 - 1200px :  laptop
+1200 -1440px  :  laptop-large
+1440 - 2560px :  big-desktop
+
+$BREAKPOINT ARGUMENT CHOICES
+- mobile-small
+- mobile-medium
+- mobile-large
+- tablet-small
+- tablet
+- laptop
+- laptop-large
+- big-desktop
+*/
+
+@mixin respond($breakpoint) {
+
+    @if $breakpoint == mobile-small {
+        @media only screen and (max-width: 20em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == mobile-medium {
+        @media only screen and (max-width: 23.4375em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == mobile-large{
+        @media only screen and (max-width: 26.5625em) {
+            @content;
+        }
+    }
+  
+    
+    @if $breakpoint == tablet-small {
+        @media only screen and (max-width: 37.5em) {
+            @content;
+        }
+    }
+  
+    @if $breakpoint == tablet {
+        @media only screen and (max-width: 48em) {
+            @content;
+        }
+    }
+  
+    @if $breakpoint == tablet-large {
+        @media only screen and (max-width: 59em) {
+            @content;
+        }
+    }
+  
+  
+    
+    @if $breakpoint == laptop-small {
+        @media only screen and (max-width: 75em) {
+            @content;
+        }
+    }
+  
+  
+    @if $breakpoint == laptop {
+        @media only screen and (max-width: 64em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == laptop-large {
+        @media only screen and (max-width: 90em) {
+            @content;
+        }
+    }
+  
+    @if $breakpoint == big-desktop {
+        @media only screen and (max-width: 160em) {
+            @content;
+        }
+    }
+}

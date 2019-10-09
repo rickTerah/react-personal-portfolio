@@ -1,0 +1,26 @@
+.footer {
+    background-color: var(--color-footer);
+    color: var(--color-white);
+    position: fixed;
+    width: 100%;
+    margin: 5rem 5rem 0 0;
+    bottom: 0;
+}
+.contact-details {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary-light);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+}
+.highlight {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 2rem;
+}

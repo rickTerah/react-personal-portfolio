@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@hapi/hoek": "^8.2.5",
+    "@hapi/hoek": "^9.0.4",
     "axios": "^0.19.0",
     "joi-browser": "^13.4.0",
     "node-sass": "^4.12.0",
